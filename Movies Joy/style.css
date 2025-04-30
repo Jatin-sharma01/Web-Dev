@@ -1,0 +1,50 @@
+.body{
+    background-color: white;
+    margin: 0;
+}
+.navbar{
+    color: rgb(0, 0, 0);
+    background-color: #ebcbf4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.navbarInner{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+}
+.navbarSocials a{
+    color: black;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+.navbarSocials a:hover{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    transition:0.6s;
+}
+.logo h3{
+    color: rgb(0, 0, 0);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Helvetica, sans-serif;
+    font-weight: 700;
+    padding-left:10px;
+}
+.logo h3:hover{
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.icons p {
+    color: black;
+    margin: 15px;
+    cursor: pointer;
+}
+.icons p:hover{
+    color: rgb(255, 255, 255);
+    transition:0.6s;
+}

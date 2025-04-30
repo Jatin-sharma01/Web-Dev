@@ -1,0 +1,314 @@
+body {
+    margin:0;
+    background-color: #F1F7EE;
+}
+.navbar{
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 60px;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+    z-index: 1000;
+}
+.navbarInner{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 0 20px;
+}
+.navbarContent{
+    display:flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: left;
+    row-gap: 20px;
+    column-gap: 40px;
+    color: rgb(255, 252, 252);
+    text-align: center;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+.colorChange a{
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: 0.5s all;
+}
+.colorChange a:hover{
+    color: #cf9033 !important;
+    text-decoration: none !important;
+    
+}
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 30px;
+
+}
+.icons p {
+    cursor: pointer;
+    font-size: 17px;
+}
+.icons p:hover{
+    color: #cf9033 !important;
+    text-decoration: none !important;
+    
+}
+.aboutus {
+    margin-top: 65px;
+}
+.aboutusUpper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    row-gap: 30px;
+    column-gap: 250px;
+    margin-left: 80px;
+}
+.aboutHeading{
+    color: orange;
+    font-size: 20px;
+    font-weight: bold;
+
+
+}
+.aboutTitle{
+    font-weight: bolder;
+    font-size: 45px;
+}
+.aboutusImage img{
+    height: 400px;
+    width: 660px;
+    border-radius: 10px;
+    margin-top: 90px;
+    margin-left: 40px;
+}
+.aboutusUpperText{
+    display: flex;
+    flex-direction: column;
+}
+.aboutusLower{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    row-gap: 30px;
+    column-gap: 120px;
+    margin-left: 80px;
+    margin-top: 10px;
+    
+}
+.aboutusLowerText{
+    /* font-weight: bold; */
+    opacity: 0.8;
+}
+.stats{
+    display: flex;
+    flex-direction: row;
+    column-gap: 150px;
+    margin-left: 190px;
+}
+.statsColumnHeading{
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.statsColumnDesc {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    opacity: 0.5;
+}
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    border-radius: 50%;
+    align-items: center;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color: #cf9033;
+  }
+  .fa-facebook {
+    padding-top: 20px;
+    background: white;
+    color: orange;
+  }
+  .fa-twitter {
+    padding-top: 20px;
+    background: white;
+    color: orange;
+  }
+  .fa-linkedin {
+    padding-top: 20px;
+    background: white;
+    color: orange;
+  }
+  .fa-instagram {
+    padding-top: 20px;
+    background: white;
+    color: orange;
+  }
+  .upperFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f98f00;
+    height: 50px;
+    bottom: 0;
+    padding: 40px 20px;
+    margin-top: 100px;
+    
+  }
+  /* .rightFooter{
+    height: 20px;
+    width: 20px;
+  } */
+  .leftFooter {
+    font-size: 18px;
+    font-weight: bolder !important;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 5px;
+  }
+  .middleFooter{
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1F2833;
+    padding: 20px;
+  
+  }
+  
+  .companyNameFooter {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    
+    padding-left: 15px;
+    text-decoration: underline;
+  }
+  .companyNameFooterDesc{
+    
+    padding-top: 0;
+    padding-left: 15px;
+    color: white;
+    opacity: 0.5;
+  }
+  .companyNameFooter{
+    text-decoration: underline;
+  }
+  .footerProducts a{
+    text-decoration: none !important;
+    color:white;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  
+  .companyProductsFooter{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    padding-top: 18px;
+    text-decoration: underline;
+  }
+  .companyLinksFooter{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    padding-top: 18px;
+    text-decoration: underline;
+  }
+  .companyContactFooter{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: start;
+    padding-top: 18px;
+    text-decoration: underline;
+  }
+  .lowerFooter{
+    text-align: center;
+    font-weight: bold;
+    background-color: #1F2833;
+    justify-content: space-between;
+    /* margin-bottom: 1; */
+    padding: 10px 20px;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important; */
+    border-top:1px solid #e4e1e1;
+  }
+  .lowerFooter p {
+    padding-top: 14px;
+    color: white;
+  }
+  .footerlinks{
+    text-decoration: none !important;
+    color:white;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  .footerContact{
+    text-decoration: none !important;
+    color:white;
+    line-height: 25px;
+    opacity: 0.5;
+  }
+  .footerlinks a{
+    text-decoration: none !important;
+    color:white;
+    line-height: 25px;
+  }
+  .footerContact a{
+    text-decoration: none !important;
+    color:white;
+    line-height: 25px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cf9033; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cf9033; 
+  }

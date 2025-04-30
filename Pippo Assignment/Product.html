@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #4fb320;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 1.5rem;
+        }
+        .header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-15px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            margin-bottom: 5px;
+        }
+        .product-title {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .product-price {
+            font-weight: 600;
+            font-size: 16px;
+            color: #2c7b08;
+            margin-bottom: 20px;
+        }
+        .buy-now {
+            background-color: #5ee022;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .buy-now:hover {
+            color: #5ee022;
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html">Razer Gaming Mouse</a>
+    </div>
+
+    <div class="container">
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSomqNNlWJ-SdNjRS4gvqtxKblHxoEKw5r9sw&s">
+            <div class="product-title">Razer Gaming Mouse V1</div>
+            <div class="product-price">Price: ₹9999.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.pngkey.com/png/detail/415-4157479_razer-mamba-tournament-2015-chroma-call-of-duty.png" alt="Pro League T-shirt">
+            <div class="product-title">Razer Gaming Mouse V2</div>
+            <div class="product-price">Price: ₹4,350.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets2.razerzone.com/images/pnx.assets/ac3c7e522c3b9dcf052b113ba60c5cde/razer-naga-left-handed-edition-500x500.png" alt="Van Gogh Oversized T-shirt">
+            <div class="product-title">Razer Gaming Mouse V3</div>
+            <div class="product-price">Price: ₹13,050.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://assets2.razerzone.com/images/pnx.assets/89b592e45a60be05a671c021f3363ac0/razer-mamba-elite_500x500.png" alt="Orbital T-shirt">
+            <div class="product-title">Razer Gaming Mouse V4 </div>
+            <div class="product-price">Price: ₹7,200.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/514v0B0UQ6L.jpg" alt="Tsunami Oversized T-shirt">
+            <div class="product-title">Razer Gaming Mouse V5</div>
+            <div class="product-price">Price: ₹6,150.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+
+        <div class="product-card">
+            <img src="https://blizzstoreperu.com/cdn/shop/products/RAZER-MOUSE-MAMBA-WIRELESS-1-1.jpg?v=1620068067" alt="Sandy Oversized T-shirt">
+            <div class="product-title">Razer Gaming Mouse V6</div>
+            <div class="product-price">Price: ₹5,050.00</div>
+            <a href="Order.html" class="buy-now">Buy Now</a>
+        </div>
+    </div>
+</body>
+</html>

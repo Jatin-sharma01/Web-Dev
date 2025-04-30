@@ -1,0 +1,145 @@
+Date:3-6-2-24
+
+-----------------javascript---------
+
+1.javascript is a object based prog. lang.
+2.javascript is a scripting lang. that enables you to create a dynamic content.
+3.javascript uses 
+   	a.web dev.
+	b.web applictn
+	c.presentation
+	d.server applicn
+	e.web servers
+	f.mobile applicant
+	g.smart watch applicat,art,games
+	h.client side validn
+	
+4. advantages
+	a.efficient performance
+	b.easy to learn and implement
+	c.less server interaction
+	d.platform independent
+	e.portability
+	f.easy to grab syntax
+	g.asyncronous prog.
+	h.reduce server load
+	i.speed and simplicity
+
+5. disadvantages
+	a.code visibility
+	b.debugging issue
+	c.single inharitence
+	d.slow DOM
+	e.SEO challenges
+	f.security risk
+	g.slow rendering
+	h.
+
+6. object oriented vs object based
+
+	object orinted supports oops concept ( c, c++,java).
+	object based does not supports oops concept like inharitence polamorism ( javascript).
+	object orinted does not have built-in object.
+	object based have built-in object.
+	//object based means its difficult to write the code and security isnt good bcz of the
+	 impresence of the oops concept //
+	//object oriented means its easy to write the code and also its good in terms of 
+	security bcz of the oops concept . this lang is also called procedural lang//
+	java is an object oriented lang as its support all the concept of oops concept like extraction,inheritance,linkedlists,
+	javascript is an object based lang bcz u can use class and object but cant use inharitence(class from another class),extraction,and encapsulation.
+
+7. javascript variables
+	a.numbers ex. let a=3;
+	b.strings	let name="btech";
+	c.object	let obj = { 
+						  name:"sunil",
+						  age:40,
+						  place:"bangalore",
+						  pass:true
+						  }
+	d.array		let array =[{ 
+						  name:"sunil",
+						  age:40,
+						  place:"bangalore",
+						  pass:true
+						  },{ 
+						  name:"sunil2",
+						  age:402,
+						  place:"bangaloree",
+						  pass:false
+						  }]
+	e.functions		const myfunc=(data)=>{}
+
+
+
+Date-6-6-24
+#Built in methods in js.
+1.Date() = return the present date and time
+2.concat() = joins two strings and returns the new string
+3.push() = add items to an array
+4.pop() = remove last item of an array
+5.round() = round the value to the nearest integer and return it
+6.length() = return the lenth of the string / number /array and etc
+
+
+#scope of variables in js
+1.scope of variables implies where the variables has been declared or defined in js program. it is of two types one is global scope and another is local scope.
+ global scope- global variable having globle scope are available everywhere in js program/code.
+ local variable- are accessible in a particular function
+
+
+#callback in js
+const myfunc=(callback)=>{
+	return callback
+}
+
+
+#function declaration 						vs 						function expression
+1.declared as a seperate statement		   	|		1.created inside an expression or some other construct
+	within the main js code					|
+2.it can be called before the function 	   	|		2.created when the execution point reaches it(can be used only after that)
+	is defined								|
+3.offer better port reliability 	   		|		3.used when there is need for conditional declaration of a function
+4.ex- function data(){						|		4. var a= function data(){   
+	return 2								|					return 2           
+} 											|			 }
+
+
+#cookie
+1.cookie is a generally small data that is sent from a website and stored on a user machiene by a web browser
+that was used to access the website
+2.cookies are used to remember the information for later use and also to refer the browsing activity on a website
+3.ex- document.cookie="key=value;date=expire";
+
+
+#session storage								vs 							local storage
+1.the data stored in session storage gets		|		1.website store some data in local machiene to reduce the loading time
+expired or delete when a page session end		|			the data does not get deleted at the end of browsing session
+
+
+#"this" keyword
+the keyword "this" in javascript is used to call the current object  as constructor to assign value of object properties
+
+
+#primitive-datatype
+are capable of displaying 1 value at a time
+ex- boolean ,undefined,null,no.,string.
+
+#DOM
+dom stands for document object model, it is a programming interface that allow us to create change or remove elements from the documents.
+you can also add event(function) to change the element.
+
+#REPL
+It stands for READ EVAL PRINT LOOP. 
+READ- read the users input and passes the js datastructure and store in memory
+EVAL- takes and evaluate the datastructure
+PRINT- print the result
+LOOP- loop the above command until user stop it or press control+c twice
+
+#pure component
+it is sub class of component and support all the component api.
+extending pure component is equivalent to defining a custom component.
+
+#component
+component are independent and reusable bits of code. they serve the same purpose as a js function
+but work in isolation and returns html
