@@ -1,0 +1,4 @@
+# Only ignore specific files that should not be processed
+node_modules/
+.env.local
+*.log

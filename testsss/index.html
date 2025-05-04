@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix Home</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #000;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header img {
+      height: 40px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://wallpaperaccess.com/full/2703652.png') no-repeat center center/cover;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      padding-left: 40px;
+    }
+    .hero h1 {
+      font-size: 3em;
+      max-width: 600px;
+    }
+    .section {
+      padding: 20px 40px;
+    }
+    .section h2 {
+      margin-bottom: 10px;
+    }
+    .movies {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+    }
+    .movie {
+      width: 100%;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .movie img {
+      width: 100%;
+      display: block;
+      border-radius: 4px;
+      transition: transform 0.3s;
+    }
+    .movie img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="Netflix Logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">TV Shows</a>
+      <a href="#">Movies</a>
+      <a href="#">My List</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Watch the latest blockbusters and series now</h1>
+  </section>
+
+  <section class="section">
+    <h2>Popular on Netflix</h2>
+    <div class="movies">
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+1" alt="Movie 1" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+2" alt="Movie 2" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+3" alt="Movie 3" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+4" alt="Movie 4" /></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Trending Now</h2>
+    <div class="movies">
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+5" alt="Movie 5" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+6" alt="Movie 6" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+7" alt="Movie 7" /></div>
+      <div class="movie"><img src="https://via.placeholder.com/300x170?text=Movie+8" alt="Movie 8" /></div>
+    </div>
+  </section>
+
+</body>
+</html>
