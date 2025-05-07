@@ -49,5 +49,5 @@ This is my personal learning space, but if you find something broken or have sug
 ## 📬 Contact Me
 
 - **Email:** wastesting001@gmail.com
-- **LinkedIn:** 
+- **LinkedIn:** https://www.linkedin.com/in/jatin-sharma-50802829a/
 - **GitHub:** https://github.com/Jatin-sharma01
