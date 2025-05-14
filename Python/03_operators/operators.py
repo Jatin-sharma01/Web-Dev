@@ -45,4 +45,4 @@ print("True and True is", True and True)
 print("False and True is", False and True)
 print("False and False is", False and False)
 
-print(not(False)) # not operator simples converts the true into false and false into true
+print(not(False)) # not operator simples converts the true into false and false into truee
