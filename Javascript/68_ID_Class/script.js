@@ -12,7 +12,7 @@ newcolor[2].style.backgroundColor = "cyan";
 document.getElementById("limebox").style.backgroundColor = "lime";
 
 //queryselector means adding inline css to the first element
-document.querySelector(".box").style.backgroundColor = "green";
+document.querySelector(".box").style.backgroundColor = "purple";
 // to add css to all elements we must run a loop, we cant do it normally
 console.log(document.querySelectorAll(".box"))
 
