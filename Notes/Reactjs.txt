@@ -1,0 +1,32 @@
+Date:20-5-25
+
+-----------------React--------
+what is react js
+    -react js is a popular javascript library, used for building user interface
+        specially for single page applications
+
+#Features
+    - component based architecture
+    - declarative syntax
+    - virtual DOM
+    - JSX
+    - Unidirectional data flow
+    - reach ecosystem
+    - Ex: import React from 'react';
+            function Welcome(props) {
+                return <h1>Hello, {props.name}!</h1>;
+                }
+                export default Welcome;
+
+#Installation Guide
+    -To create react applications use this command ( npx create-react-app my-app)
+    -then go to my app by using (cd my-app)
+    -then start the applications using npm start
+
+# MERN Stack
+    -Mongodb
+    -Expressjs
+    -Reactjs
+    -Nodejs
+
+    by using mern stack we are going to make this student ecosystem project

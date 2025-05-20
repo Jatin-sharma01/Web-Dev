@@ -1,8 +1,8 @@
 const { ifError } = require("assert");
-const Teacher = require("../models/teacher");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const shortid = require("shortid");
+const Admin = require("../models/admin");
 
 const generateJwtToken = (_id, role) => {
   return jwt.sign({ _id, role }, process.env.JWT_SECRET, {
@@ -10,7 +10,7 @@ const generateJwtToken = (_id, role) => {
   });
 };
 
-exports.signupTeacher = async (req, res) => {
+exports.signupAdmin = async (req, res) => {
   try {
     const {
       firstName,
@@ -19,25 +19,21 @@ exports.signupTeacher = async (req, res) => {
       email,
       profilePicture,
       password,
-      subject,
-      bio,
     } = req.body;
     const hash_password = await bcrypt.hash(password, 10);
-    const checkUser = await Teacher.findOne({ email: email });
+    const checkUser = await Admin.findOne({ email: email });
     if (checkUser) {
-      return res.status(400).json({ message: " Teacher already exist" });
+      return res.status(400).json({ message: " Admin already exist" });
     }
 
-    const newUser = new Teacher({
+    const newUser = new Admin({
       firstName,
       lastName,
       phoneNo,
       email,
       profilePicture,
       hash_password,
-      subject,
-      bio,
-      teacherId: "SE-" + shortid()
+      adminId: "AD-" + shortid()
     });
 
     const savedUser = await newUser.save();
@@ -45,7 +41,7 @@ exports.signupTeacher = async (req, res) => {
     const token = generateJwtToken(savedUser._id, savedUser.role);
     return res.status(201).json({
       token,
-      teacher: savedUser
+      admin: savedUser
     });
   } catch (error) {
     console.log(error)
@@ -53,21 +49,21 @@ exports.signupTeacher = async (req, res) => {
   }
 };
 
-exports.signinTeacher = async(req, res) =>{
+exports.signinAdmin = async(req, res) =>{
     try {
         const {email,password} = req.body
         console.log(email,password);
-        const user = await Teacher.findOne({email:email});
+        const user = await Admin.findOne({email:email});
         console.log(user)
         if (user){
             
             const isPassword = await user.authenticate(password);
             console.log(isPassword);
-            if(isPassword && user.role==="teacher"){
+            if(isPassword && user.role==="admin"){
                 const token = generateJwtToken(user._id, user.role)
                 return res.status(200).json({
                     token,
-                    teacher:user
+                    admin:user
                 })
                 
 

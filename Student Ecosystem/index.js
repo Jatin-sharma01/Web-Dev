@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 const userroutes = require('./src/routes/user');
 const teacherroutes = require('./src/routes/teacher');
+const adminroutes = require('./src/routes/admin');
 
 env.config();
 mongoose.connect(
@@ -26,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors({ origin: 'http://localhost:3001/', credentials: true }));
 app.use("/api",userroutes)
 app.use("/api",teacherroutes)
+app.use("/api",adminroutes)
 
 let port = process.env.PORT
 app.listen(port, () => {
