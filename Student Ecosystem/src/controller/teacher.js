@@ -1,7 +1,8 @@
 const { ifError } = require("assert");
-const User = require("../models/user");
+const Teacher = require("../models/teacher");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
+const shortid = require("shortid");
 
 const generateJwtToken = (_id, role) => {
   return jwt.sign({ _id, role }, process.env.JWT_SECRET, {
@@ -9,33 +10,34 @@ const generateJwtToken = (_id, role) => {
   });
 };
 
-exports.signup = async (req, res) => {
+exports.signupTeacher = async (req, res) => {
   try {
     const {
       firstName,
       lastName,
-      rollNo,
       phoneNo,
       email,
       profilePicture,
-      classes,
       password,
+      subject,
+      bio,
     } = req.body;
     const hash_password = await bcrypt.hash(password, 10);
-    const checkUser = await User.findOne({ email: email });
+    const checkUser = await Teacher.findOne({ email: email });
     if (checkUser) {
-      return res.status(400).json({ message: " User already exist" });
+      return res.status(400).json({ message: " Teacher already exist" });
     }
 
-    const newUser = new User({
+    const newUser = new Teacher({
       firstName,
       lastName,
-      rollNo,
       phoneNo,
       email,
       profilePicture,
-      classes,
-      hash_password
+      hash_password,
+      subject,
+      bio,
+      teacherId: "SE-" + shortid()
     });
 
     const savedUser = await newUser.save();
@@ -43,7 +45,7 @@ exports.signup = async (req, res) => {
     const token = generateJwtToken(savedUser._id, savedUser.role);
     return res.status(201).json({
       token,
-      user: savedUser
+      teacher: savedUser
     });
   } catch (error) {
     console.log(error)
