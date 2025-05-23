@@ -1,0 +1,71 @@
+/* body{
+    cursor: pointer;
+} */
+.box{
+    height: 50px;
+    width: 50px;
+    background: #a08686;
+    color: aqua;
+    font-size: 15px;
+    border: 5px solid black;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+ .navbar {
+    background-color: #fcfcfc;
+    width: 100%;
+    height: 60px;
+    position: fixed !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23) !important;
+    z-index: 1000;
+}
+.navbarInner{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    padding: 0 20px;
+}
+.navbarContent{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    row-gap: 20px;
+    column-gap: 40px;
+    color: rgb(255, 252, 252);
+    text-align: center;
+    padding-top: 20px;
+    font-size: 17px;
+}
+ul, li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+.colorChange a{
+    color: #000000 !important;
+    text-decoration: none !important;
+    transition: 0.5s all;
+}
+.colorChange a:hover{
+    color: #cf9033 !important;
+    text-decoration: none !important;
+    
+}
+.signupContent{
+    display: flex;
+    gap: 30px;
+    font-size: 17px;
+    padding-top: 20px;
+}
