@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css'; // You'll need to style it with CSS similar to the design
 import Header from '../../components/Header';
-// import Header from '../components/Header'
+import Img1 from '../../assets/register.png'; 
 
 const Signup = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -86,7 +86,7 @@ const Signup = () => {
               Sign up
             </button>
           </div>
-          <img src="img/log.svg" className="image" alt="" />
+          <img src={Img1} className="image"/>
         </div> : 
         <div className="panel left-panel">
           <div className="content">
@@ -99,7 +99,7 @@ const Signup = () => {
               Sign in
             </button>
           </div>
-          <img src="img/register.svg" className="image" alt="" />
+          <img src={Img1} className="image"/>
         </div>
         }
         
