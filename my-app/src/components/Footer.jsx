@@ -47,7 +47,7 @@ function Footer() {
                 </div>
                 
             </div>
-            <hr className="bottomLine"/>
+            <div className="bottomLine"></div>
             <div className="lastLine">
                <p>&copy;2025 Copyright: Studentecosystem.com</p>
             </div>

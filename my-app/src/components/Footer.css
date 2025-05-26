@@ -23,7 +23,7 @@
 .iconBarLeft{
     position: relative;
     left:20px;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 600;
     color: white;
 }
@@ -110,11 +110,12 @@
 }
 
 .bottomLine{
-    background-color: #000000;
-    margin-top: 0;
-    margin-bottom: 0;
-    opacity: 1;
-    position: relative;
+    background-color: #05ad94;
+    position: absolute;
+    top: 260px;
+    height: 2px;
+    width: 100%;
+
 }
 .rightFooter{
     display: flex;
@@ -131,7 +132,7 @@
 } */
 .fa {
   padding: 5px;
-  font-size: 15px;
+  font-size: 19px;
   height: 30px;
   width: 30px;
   text-align: center;

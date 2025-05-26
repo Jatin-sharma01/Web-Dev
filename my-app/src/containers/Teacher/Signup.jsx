@@ -42,11 +42,11 @@ const Signup = () => {
             <div className="pippo">
             <div className="input-field">
               <i className="fas fa-id-card"></i>
-              <input type="text" placeholder="Roll Number" />
+              <input type="text" placeholder="Subject" />
             </div>
             <div className=" input-field">
               <i className="fas fa-chalkboard-teacher"></i>
-              <input type="text" placeholder="Class" />
+              <input type="text" placeholder="Bio" />
             </div>
             </div>
             <div className="pippo">
