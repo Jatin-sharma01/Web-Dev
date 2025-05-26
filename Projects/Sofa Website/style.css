@@ -207,3 +207,21 @@ li :hover {
     margin: 0;
     padding: 10px;
 }
+.bannerRightText{
+  position: absolute;
+  top: 560px;
+  left: 940px;
+}
+.bannerRightText1{
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 0;
+}
+.bannerRightText2{
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  font-family: Arial, Helvetica, sans-serif;
+}

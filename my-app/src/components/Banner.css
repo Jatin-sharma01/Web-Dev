@@ -1,0 +1,115 @@
+
+.hero{
+position: relative;
+  top: 62px;
+  /* background-color: rgb(160, 207, 188);
+  width: 100%;
+  height: 70vh; */
+  /* background-image: url("bannerbg.png");  */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height:100vh;
+  width: 100%;
+  /* z-index: -1; */
+  background: linear-gradient(
+      rgba(0, 95, 107, 0.42),   
+      rgba(0, 94, 107, 0.85)
+    ),
+    url('bannerbg.png');
+}
+.bannerSection {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  justify-content: space-between;
+}
+.bannerRight {
+  display: flex;
+  flex-direction: column;
+  
+  position: relative;
+  top: 100px;
+  right: 250px;
+  width: 40vw;
+}
+.bannerRight2 {
+  margin-top: 0px;
+  font-size: 50px;
+  
+  font-weight: 900;
+  margin-bottom: 0px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.bannerRight3 {
+  margin-top: 15px;
+  font-size: 20px;
+  opacity: 0.6;
+  color: white;
+  font-weight: 500;
+}
+.bannerButton {
+  display: flex;
+  align-items: center;
+}
+/* .bannerButton1 p{
+  border: 2px solid #05ad94;
+  border-radius: 15px;
+  color: white;
+  background-color: #05ad94;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  height: 40px;
+  margin-right: 10px;
+} */
+.bannerButton p:hover {
+    border: 3px solid #ff9839;
+  border-radius: 15px;
+  color:#ff9839;
+  background-color: #ffffff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.bannerButton2 p{
+  display: flex;
+  border: 3px solid #ff9839;
+  border-radius: 15px;
+  height: 40px;
+  width: 170px;
+  background-color: #ff9839;
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+/* .greenBox {
+  position: relative;
+  right: 10px;
+  top: 50px;
+  bottom: 0px;
+border-radius: 20px;
+  background-color: #05ad94;
+  height: 72vh;
+  width: 25vw;
+} */
+.greenBox img {
+  position: absolute;
+  height: 79vh;
+  left: 200px;
+  top: -30px;
+}
+.wave{
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  z-index: 1;
+}

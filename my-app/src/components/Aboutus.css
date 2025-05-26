@@ -1,0 +1,92 @@
+.Aboutus{
+    display: flex;
+    position: relative;
+    top: 750px;
+    flex-direction: column;
+}
+.upperSection{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upperText1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.upperText2{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    color: gray;
+    letter-spacing: 2px;
+}
+.lowerSection{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 40px;
+    padding-top: 20px;
+    align-items: flex-start;
+}
+.leftImg{
+    padding: 45px 0px;
+     height: 450px;
+    width: 450px;
+    /* background-color: #109e89; */
+}
+ .leftImg img{
+    height: 450px;
+    width: 450px;
+    
+    border-radius: 15px;
+    object-fit: contain;
+ }
+ .rightText {
+    /* font-size: 23px; */
+    /* width: 35vw; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    padding-right: 30px;
+    font-weight: 500;
+    opacity: 0.7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; */
+ }
+  .rightText p{
+    font-size: 18px;
+    line-height: 1.9;
+    width: 45vw;
+    display: flex;
+    letter-spacing: 2px;
+    align-items: center;
+    padding-right: 30px;
+    font-weight: 400;
+    font-family: sans-serif;
+ }
+ .aboutButton{
+    width: 120px;
+    height: 40px;
+    border: 2px solid #05ad94;
+    /* border: 2px solid rgb(140, 190, 155); */
+  border-radius: 30px;
+  color: white;
+  background-color: #05ad94;
+  /* background-color: rgb(140, 190, 155); */
+  outline: none;
+  cursor: pointer;
+ }
+ .aboutButton:hover{
+    width: 120px;
+    height: 40px;
+   border: 2px solid #05ad94;
+   /* border: 2px solid rgb(140, 190, 155); */
+  border-radius: 30px;
+  color:#05ad94;
+  /* color:rgb(140, 190, 155); */
+  background-color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  transition: 0.5s;
+ }

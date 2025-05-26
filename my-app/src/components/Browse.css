@@ -1,0 +1,44 @@
+.mainBrowse{
+    position: relative;
+    top: 810px;
+}
+.upperSectionBrowse{
+display: flex;
+flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.upperBrowseText1{
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.upperBrowseText2{
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    color: gray;
+    letter-spacing: 2px;
+}
+.imageSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 110px;
+}
+/* .browserImageBox{
+    
+    background-color: #05ad94;
+    height: 50vh;
+    width: 50vh;
+} */
+.imageSection img{
+    display: flex;
+    height: 40vh;
+    width: 20vw;
+    border: 2px solid black;
+    border-radius: 15px;
+    object-fit: cover;
+    object-position: center;
+}

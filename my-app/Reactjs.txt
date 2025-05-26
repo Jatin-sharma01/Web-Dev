@@ -30,3 +30,10 @@ what is react js
     -Nodejs
 
     by using mern stack we are going to make this student ecosystem project
+
+redux store
+reducers
+actions 
+react router DOM
+react navigations
+component
