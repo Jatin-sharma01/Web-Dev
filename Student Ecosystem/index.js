@@ -24,10 +24,10 @@ mongoose.connect(
   app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors({ origin: 'http://localhost:3001/', credentials: true }));
 app.use("/api",userroutes)
 app.use("/api",teacherroutes)
 app.use("/api",adminroutes)
+app.use(cors({ origin: 'http://localhost:3000/', credentials: true }));
 
 let port = process.env.PORT
 app.listen(port, () => {
