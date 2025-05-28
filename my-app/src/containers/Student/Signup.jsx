@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Signup.css"; // You'll need to style it with CSS similar to the design
+import "./Signup.css"; 
 import Header from "../../components/Header";
 import Img1 from "../../assets/register.png";
 import axios from "axios";
