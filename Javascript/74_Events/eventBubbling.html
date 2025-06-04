@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+</head>
+<body>
+     <style>
+        .child {
+            background-color: aliceblue;
+            border: 2px solid black;
+            padding: 14px;
+            margin: 14px;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: beige;
+            padding: 14px;
+            margin: 14px;
+        }
+
+        .container {
+            background-color: rgb(227, 227, 28);
+            padding: 14px;
+            margin: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <section class="childContainer">
+            <div class="child">
+                I am a child
+            </div>
+        </section>
+    </div>
+    <script>
+        // event bubbling is basically, suppose if we ask question to ourself that is delhi in india: answer yes
+        // is india in asia: answer yes
+        // is asia on earth: answer yes, so basically if we ask is delhi in india, asia, earth then it will give yes for all 3, similarly we facing event bobbing
+        // if we run alert for child then it will give us 3 alerts to stop this we are going to use event propagation, so we will write e inside those empty bracks after event listner and then use stoppropagation on e. then it wont give us 3 alerts
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("Child Was clicked")
+        })
+
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            alert("childContainer Was clicked")
+        })
+
+        document.querySelector(".container").addEventListener("click", (e) => {
+            alert("container Was clicked")
+        })
+// we can use setInterval to make a thing happen again n again, for example we can run a code every 5 seconds automatically
+// we gonna use the random color generator which we used in 72 video to generate a random color every 3 second in the childcontainer class
+// so i just bought the code here and applied the color change with query selector on childcontainer, we used 3000 means 3000millisecond
+// to clear the interval, we can open the console and type clearinterval(1)  , here the(1) is the interval and we can pause it
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+    
+        // let a = setInterval(() => {
+        //     document.querySelector(".childContainer").style.background = getRandomColor();
+        // }, 3000);
+
+        // console.log(a)
+
+// we can use setTimeout similarly, syntax is same as setinterval
+// set
+// to clear the timeout, we can open the console and type clearTimeout(1)  , its same as interval
+        let a = setTimeout(() => {
+            document.querySelector(".childContainer").style.background = getRandomColor();
+        }, 5000);
+
+        console.log(a)
+
+
+    </script>
+</body>
+</html>
