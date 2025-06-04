@@ -1,4 +1,4 @@
-// video 74 of cwh
+// video 74 of cwh, 04-06-2025
 
 let button = document.getElementById("btn")
 // these are browser events, we are going to use browser events for mouse, there are many types of mouse events like click, double click, scroll and etc
